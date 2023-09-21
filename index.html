@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="foco">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fokus</title>
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="app">
+        <header class="app__header">
+            <figure class="app__logo-figure">
+                <img class="app__logo-image" src="/imagens/logo.png" alt="">
+            </figure>
+        </header>
+        <section class="app__section-banner-container">
+            <h1 class="app__title">
+                Otimize sua produtividade,<br>
+                <strong class="app__title-strong">mergulhe no que importa.</strong>
+            </h1>
+            <figure class="app__image-figure">
+                <img class="app__image" src="/imagens/foco.png" alt="">
+            </figure>
+        </section>
+        <section class="app__section-card-container">
+            <div class="app__card">
+                <ul class="app__card-list">
+                    <li class="app__card-list-item">
+                        <button data-contexto="foco" class="app__card-button app__card-button--foco active">Foco</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button data-contexto="short" class="app__card-button app__card-button--curto">Descanso curto</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button data-contexto="long" class="app__card-button app__card-button--longo">Descanso longo</button>
+                    </li>
+                </ul>
+                <div id="timer" class="app__card-timer"></div>
+                <ul class="app__card-list">
+                    <li class="app__card-list-item">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li class="app__card-list-item">
+                        <label class="app__card-list-label" for="alternar-musica">
+                            Música
+                        </label>
+                    </li>
+                </ul>
+                <div class="app__card-primary-button-wrapper">
+                    <button id="start-pause" class="app__card-primary-button">
+                        <img class="app__card-primary-butto-icon" src="/imagens/play_arrow.png" alt="">
+                        <span>Começar</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="app__section-tarefas">
+            
+            <div class="app__lista">
+                <h1 class="app__lista-titulo">Lista de tarefas:</h1>
+                <div id="lista" class="app__lista-lista-div">
+                    <ul class="app__lista-tarefas" id="lista">
+                        <li class="app__lista-item">
+                            <img src="./imagens/check_branco.png" alt="" class="app__lista-item-check"><h3 class="app__lista-item-texto">Tarefa exemplo</h3>
+                        </li>
+                    </ul>
+                </div>
+                <form action="" class="app__lista-adicionar-container" id="novoItem">
+                    <div class="app__lista-adicionar">
+                        <h2 class="app__lista-adicionar-titulo">Adicionar Tarefa</h2>
+                        <input type="text" placeholder="No que você está trabalhando?" class="app__lista-imput">
+                    </div>
+                    <div class="app__lista-botoes">
+                        <button class="app__lista-botao-deletar app__lista-botao">
+                            <img src="./imagens/delete_outline.png" class="app__lista-botao-imagem">
+                            <h3 class="app__lista-botao-texto">Deletar</h3>
+                        </button>
+                        <button class="app__lista-botao-cancelar app__lista-botao">
+                            <img src="./Ícones/close (7).png" alt="" class="app__lista-botao-imagem">
+                            <h3 class="app__lista-botao-texto">Cancelar</h3>
+                        </button>
+                        <button class="app__lista-botao-salvar app__lista-botao">
+                            <img src="./imagens/save.png" alt="" class="app__lista-botao-imagem">
+                            <h3 class="app__lista-botao-texto">Salvar</h3>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="app__nova-tarefa">
+                    <button class="app__nova-tarefa-botao">
+                        <img src="./Ícones/Add_lilás.png" class="app__nova-tarefa-imagem">
+                        <h3 class="app__nova-tarefa-texto">Adicionar nova tarefa</h3>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <footer class="app__footer">
+            <p class="app__footer-text">
+                Projeto fictício e sem fins comerciais. Imagens geradas por IA no Adobe Firefly. Desenvolvido por Alura. 
+            </p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
